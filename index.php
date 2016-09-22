@@ -1,5 +1,9 @@
 <?php
-include('class.php');
+spl_autoload_register(function($class){
+
+  include $class. '.php';
+
+});
 
 
 ?>
@@ -14,9 +18,21 @@ include('class.php');
 
   <?php
 
-    $Will = new vipAccount(10, 1000);
-    $Will->set_Acc('SomeRandomGuy', 'secret');
+    $Tom = new classes;
+    $Will = new vipAccount(1, 1000);
+    $Will->set_name('Will');
+    $Will->set_pass('');
+    $Will->addQuote();
     $Will->startFarm(10);
+    $Will->calls();
+    $Will->seeLvl();
+
+
+    foreach($Will as $key => $value){
+
+    print "$key => $value\n";
+
+  }
 
   ?>
 
