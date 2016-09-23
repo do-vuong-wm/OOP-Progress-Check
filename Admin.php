@@ -17,17 +17,3 @@ class Admin extends Account{
 }
 
  ?>
-
-
-class intro{
-
-  public static $name;
-
-  public function sayHello($name){
-
-    echo 'Hello All, I am '.$name ;
-
-  }
-
-
-}
